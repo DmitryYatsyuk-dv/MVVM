@@ -15,6 +15,10 @@
 		3267A71C240AAB9200F0B463 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267A71B240AAB9200F0B463 /* TableViewController.swift */; };
 		3267A71E240AABEB00F0B463 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267A71D240AABEB00F0B463 /* Profile.swift */; };
 		3267A720240AB08F00F0B463 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267A71F240AB08F00F0B463 /* TableViewCell.swift */; };
+		32930E80240ACF6000FD22DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32930E7F240ACF6000FD22DA /* ViewModel.swift */; };
+		32930E82240ACFF400FD22DA /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32930E81240ACFF400FD22DA /* TableViewModelType.swift */; };
+		32930E86240AD3B300FD22DA /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32930E85240AD3B300FD22DA /* TableViewCellViewModelType.swift */; };
+		32930E88240AD49A00FD22DA /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32930E87240AD49A00FD22DA /* TableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		3267A71B240AAB9200F0B463 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3267A71D240AABEB00F0B463 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3267A71F240AB08F00F0B463 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		32930E7F240ACF6000FD22DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		32930E81240ACFF400FD22DA /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
+		32930E85240AD3B300FD22DA /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		32930E87240AD49A00FD22DA /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,8 @@
 			children = (
 				32180AA0240AAAAE00B9A1F8 /* AppDelegate.swift */,
 				32180AA2240AAAAE00B9A1F8 /* SceneDelegate.swift */,
-				3267A71B240AAB9200F0B463 /* TableViewController.swift */,
+				32930E83240AD08A00FD22DA /* ViewModel */,
+				32930E84240AD09E00FD22DA /* Protocols */,
 				3267A722240AB1A500F0B463 /* View */,
 				3267A721240AB18F00F0B463 /* Model */,
 				32180AA6240AAAAE00B9A1F8 /* Main.storyboard */,
@@ -84,9 +93,28 @@
 		3267A722240AB1A500F0B463 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3267A71B240AAB9200F0B463 /* TableViewController.swift */,
 				3267A71F240AB08F00F0B463 /* TableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32930E83240AD08A00FD22DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32930E7F240ACF6000FD22DA /* ViewModel.swift */,
+				32930E87240AD49A00FD22DA /* TableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32930E84240AD09E00FD22DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32930E81240ACFF400FD22DA /* TableViewModelType.swift */,
+				32930E85240AD3B300FD22DA /* TableViewCellViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32930E86240AD3B300FD22DA /* TableViewCellViewModelType.swift in Sources */,
 				3267A720240AB08F00F0B463 /* TableViewCell.swift in Sources */,
 				32180AA1240AAAAE00B9A1F8 /* AppDelegate.swift in Sources */,
 				3267A71E240AABEB00F0B463 /* Profile.swift in Sources */,
 				3267A71C240AAB9200F0B463 /* TableViewController.swift in Sources */,
+				32930E82240ACFF400FD22DA /* TableViewModelType.swift in Sources */,
+				32930E88240AD49A00FD22DA /* TableViewCellViewModel.swift in Sources */,
+				32930E80240ACF6000FD22DA /* ViewModel.swift in Sources */,
 				32180AA3240AAAAE00B9A1F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
