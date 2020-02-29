@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Suf-js-hYK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="oHC-bV-eRM">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" id="Suf-js-hYK" customClass="TableViewController" customModule="MVVM_UITableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AoF-1f-T20">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hdF-NK-a1e" customClass="TableViewCell" customModule="MVVM_UITableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hdF-NK-a1e" id="BUj-PS-Kmv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvh-Dh-Lba">
+                                            <rect key="frame" x="20" y="11" width="332" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="T7h-il-Ogr">
+                                            <rect key="frame" x="352" y="11" width="42" height="22.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="GUu-QM-xM2"/>
+                                                <constraint firstAttribute="width" constant="42" id="QOP-Bb-21i"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="T7h-il-Ogr" secondAttribute="trailing" constant="20" id="Pfs-AT-FUg"/>
+                                        <constraint firstItem="wvh-Dh-Lba" firstAttribute="leading" secondItem="BUj-PS-Kmv" secondAttribute="leading" constant="20" id="ROV-MV-iJE"/>
+                                        <constraint firstAttribute="bottom" secondItem="T7h-il-Ogr" secondAttribute="bottom" constant="11.5" id="akt-H4-tiQ"/>
+                                        <constraint firstItem="T7h-il-Ogr" firstAttribute="leading" secondItem="wvh-Dh-Lba" secondAttribute="trailing" id="hLG-hj-fWV"/>
+                                        <constraint firstItem="wvh-Dh-Lba" firstAttribute="top" secondItem="BUj-PS-Kmv" secondAttribute="top" constant="11" id="ivE-3j-8AE"/>
+                                        <constraint firstItem="T7h-il-Ogr" firstAttribute="top" secondItem="BUj-PS-Kmv" secondAttribute="top" constant="11" id="sfx-n6-zoM"/>
+                                        <constraint firstAttribute="bottom" secondItem="wvh-Dh-Lba" secondAttribute="bottom" constant="12" id="wim-Gy-bqX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageLabel" destination="T7h-il-Ogr" id="PIB-NU-Eb5"/>
+                                    <outlet property="fullNameLabel" destination="wvh-Dh-Lba" id="iiR-Xs-s3X"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Suf-js-hYK" id="uDH-y6-Zuu"/>
+                            <outlet property="delegate" destination="Suf-js-hYK" id="oR6-NW-g1k"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o72-mg-Ot6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
