@@ -33,7 +33,7 @@
                                             <rect key="frame" x="352" y="11" width="42" height="22.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="GUu-QM-xM2"/>
-                                                <constraint firstAttribute="width" constant="42" id="QOP-Bb-21i"/>
+                                                <constraint firstAttribute="width" constant="42" id="baL-Nc-cKd"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
